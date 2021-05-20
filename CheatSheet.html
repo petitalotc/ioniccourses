@@ -74,9 +74,9 @@
                   <div style="box-sizing: border-box; position: relative;">
                     <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
                       <div style="box-sizing: border-box; color: rgb(57, 58, 52);">npm install -g npm</div>
-                      <p>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
                         <span style="font-size: 1rem;">npm install -g @ionic/cli</span>
-                      </p>
+                      </div>
                     </pre>
                   </div>
                   <p>Créer une nouvelle application :</p>
@@ -176,14 +176,34 @@
     loadChildren: () =&gt; import('./pages/tabs-page/tabs-page.module').then(m =&gt; m.TabsModule)
   }
 ];</div>
-                      <p># Si vous souhaitez changer de page depuis votre code, commencez par importer la classe Router</p>
-                      <p>import { Router } from '@angular/router';</p>
-                      <p># Injecter le ensuite dans votre classe en passant par son constructeur</p>
-                      <p>constructor(
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
+                        <span style="font-weight: 400; font-size: 1rem;"># Si vous souhaitez changer de page depuis votre code, commencez par importer la classe Router</span>
+                      </div>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
+                        <span style="font-size: 1rem;">
+                          <span style="font-weight: 400;">import { Router } from '@angular/router';</span>
+                        </span>
+                      </div>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
+                        <span style="font-size: 1rem;">
+                          <span style="font-weight: 400;"># Injecter le ensuite dans votre classe en passant par son constructeur</span>
+                        </span>
+                      </div>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
+                        <span style="font-size: 1rem;">
+                          <span style="font-weight: 400;">constructor(
   public router: Router,
-) { }</p>
-                      <p># Il ne vous reste plus qu'à l'utiliser à l'endroit voulu pour naviguer entre vos pages</p>
-                      <p>this.router.navigateByUrl('/login');</p>
+) { }</span>
+                        </span>
+                      </div>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
+                        <span style="font-size: 1rem;">
+                          <span style="font-weight: 400;"># Il ne vous reste plus qu'à l'utiliser à l'endroit voulu pour naviguer entre vos pages</span>
+                        </span>
+                      </div>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
+                        <span style="font-weight: 400; font-size: 1rem;">this.router.navigateByUrl('/login');</span>
+                      </div>
                     </pre>
                   </div>
                 </div>
@@ -206,14 +226,12 @@
                     <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
                       <div style="box-sizing: border-box; color: rgb(57, 58, 52);">import { HttpClientModule } from '@angular/common/http';
 ...</div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);"> @NgModule({
-  imports: [</div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">&nbsp; &nbsp; ...,
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">@NgModule({
+  imports: [...,
     HttpClientModule
-  ],</div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">&nbsp; ...
+  ],...
 })
-export class AppModule {} </div>
+export class AppModule {}</div>
                     </pre>
                   </div>
                   <blockquote>
@@ -231,21 +249,21 @@ const httpOptions = {
     }
   )
 };</div>
-                      <p>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
                         <span style="font-size: 1rem; font-weight: 400;"># On ajoute le client HTTP dans le constructeur</span>
-                      </p>
-                      <p>
+                      </div>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
                         <span style="font-size: 1rem; font-weight: 400;">constructor(
   ...,
   public httpClient: HttpClient
 ) {}</span>
-                      </p>
-                      <p>
+                      </div>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
                         <span style="font-size: 1rem;">
                           <span style="font-weight: 400;"># On peut ensuite utiliser le client pour récupérer nos objets.</span>
                         </span>
-                      </p>
-                      <p>
+                      </div>
+                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
                         <span style="font-size: 1rem;">
                           <span style="font-weight: 400;">getItems() {
   this.httpClient.get&lt;Observable&lt;object[]&gt;&gt;('https://my-url/items', httpOptions)
@@ -254,7 +272,7 @@ const httpOptions = {
     });
 }</span>
                         </span>
-                      </p>
+                      </div>
                     </pre>
                   </div>
                   <p>
@@ -276,9 +294,17 @@ const httpOptions = {
                     <br>
                   </p>
                   <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                    <p>ng add @angular/pwa</p>
-                    <p># Pour packager votre application en site web :</p>
-                    <p>ionic build --prod</p>
+                    <p>
+                      <span style="font-weight: 400; font-size: 1rem;">ng add @angular/pwa</span>
+                    </p>
+                    <p>
+                      <span style="font-size: 1rem;">
+                        <span style="font-weight: 400;"># Pour packager votre application en site web :</span>
+                      </span>
+                    </p>
+                    <p>
+                      <span style="font-weight: 400; font-size: 1rem;">ionic build --prod</span>
+                    </p>
                   </pre>
                   <p>
                     <br>

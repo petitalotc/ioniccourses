@@ -18,16 +18,7 @@
 
 .u-section-1 .u-text-2 {
   width: 770px;
-  margin: 40px auto 0;
-}
-
-.u-section-1 .u-btn-1 {
-  border-style: solid;
-  font-weight: 700;
-  text-transform: uppercase;
-  align-self: center;
   margin: 40px auto 60px;
-  padding: 10px 63px;
 }
 
 @media (max-width: 1199px) {
@@ -247,8 +238,9 @@
 
   .u-section-2 .u-repeater-1 {
     grid-auto-columns: calc(50% - 5px);
-    grid-template-columns: repeat(2, calc(50% - 5px));
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
     grid-auto-rows: calc(33.33% - 6.66667px);
+    grid-gap: 10px 10px;
   }
 }
 
@@ -303,7 +295,7 @@
 
   .u-section-2 .u-repeater-1 {
     grid-auto-columns: 100%;
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: 100%;
     grid-auto-rows: calc(16.66% - 8.33333px);
   }
 }.u-section-3 .u-sheet-1 {
@@ -471,8 +463,9 @@
 
   .u-section-3 .u-repeater-1 {
     grid-auto-columns: calc(33.3333% - 6.66667px);
-    grid-template-columns: repeat(3, calc(33.3333% - 6.66667px));
+    grid-template-columns: calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px) calc(33.3333% - 6.66667px);
     grid-auto-rows: calc(33.33% - 6.66667px);
+    grid-gap: 10px 10px;
   }
 }
 
