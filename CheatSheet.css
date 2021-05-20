@@ -117,7 +117,7 @@
 }
 
 .u-section-1 .u-container-layout-4 {
-  padding: 30px;
+  padding: 30px 30px 30px 34px;
 }
 
 .u-section-1 .u-accordion-item-5 {
@@ -212,6 +212,10 @@
 @media (max-width: 991px) {
   .u-section-1 .u-accordion-1 {
     margin-top: 122px;
+  }
+
+  .u-section-1 .u-container-layout-4 {
+    padding-left: 30px;
   }
 }
 

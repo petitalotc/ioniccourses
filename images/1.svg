@@ -1,0 +1,17 @@
+
+
+<svg width="20px" height="28px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 28" enable-background="new 0 0 20 28" xml:space="preserve">
+<path d="M12,4h-2v3H9V4H7V3h1V2h1V1h1v1h1v1h1V4z M7,9H4V7H3v1H2v1H1v1h1v1h1v1h1v-2h3V9z M18,9h-1V8h-1V7h-1v2h-3v1h3v2h1v-1h1v-1
+	h1V9z M7,15v1h1v1h1v-1v-1H7z"/>
+	<path fill="#FFFFFF" d="M10,2V1h1v1H10z M12,3V2h-1v1H12z M12,3v1h-2v3H9V4H7V3H6v1v1h2v3h3V5h2V3H12z M10,0H9v1h1V0z M9,1H8v1h1V1z
+	 M8,2H7v1h1V2z M8,17v1h1v-1H8z M7,16v1h1v-1H7z M6,14v2h1v-1h2v-1H6z M10,17v1 M17,11h1v-1h-1V11z M16,12h1v-1h-1V12z M16,12h-1v-2
+	h-1h-2V9h2h1V7h1V6h-1h-1v2h-3v1v1v1h3v2h1h1V12z M19,10V9h-1v1H19z M18,9V8h-1v1H18z M17,8V7h-1v1H17z M2,8H1v1h1V8z M3,7H2v1h1V7z
+	 M3,7h1v2h3v1H4v2H3v1h2v-2h3V8H5V6H3V7z M0,9v1h1V9H0z M1,10v1h1v-1H1z M2,11v1h1v-1H2z"/>
+	<polygon fill="#FFFFFF" points="16,19 17,19 18,19 18,18 17,18 17,17 16,17 16,16 15,16 15,15 14,15 14,14 13,14 13,13 12,13 12,12
+	11,12 11,11 10,11 10,22 11,22 11,21 12,21 12,20 13,20 13,21 14,21 14,23 15,23 15,25 16,25 16,27 17,27 18,27 18,25 17,25 17,23
+	16,23 16,21 15,21 15,19 "/>
+	<path d="M12,13v-1h1v1H12z M14,14v-1h-1v1H14z M10,11h1v-1h-1V9H9v15h1v-1h1v-1h-1V11z M12,12v-1h-1v1H12z M17,17v-1h-1v1H17z
+	 M18,18v-1h-1v1H18z M15,15v-1h-1v1H15z M16,16v-1h-1v1H16z M14,23v2h1v-2H14z M16,27v1h3v-1v-2h-1v2H16z M18,25v-2h-1v2H18z M17,23
+	v-2h-1v2H17z M20,20v-1h-1v-1h-1v1h-3v1v1h1v-1H20z M13,21v2h1v-2H13z M12,20v1h1v-1H12z M15,25v2h1v-2H15z M11,22h1v-1h-1V22z"/>
+</svg>

@@ -71,20 +71,14 @@
                 <div class="fr-view u-clearfix u-rich-text u-text">
                   <p>Installer NodeJS (vous pouvez prendre la dernière LTS, à titre informatif j'ai cette version sur mon PC : v12.14.0)</p>
                   <p>Installer npm &gt; ouvrez une ligne de commande :</p>
-                  <div style="box-sizing: border-box; position: relative;">
-                    <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">npm install -g npm</div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-size: 1rem;">npm install -g @ionic/cli</span>
-                      </div>
-                    </pre>
-                  </div>
+                  <blockquote>
+                    <p>npm install -g npm</p>
+                    <p>npm install -g @ionic/cli</p>
+                  </blockquote>
                   <p>Créer une nouvelle application :</p>
-                  <div style="box-sizing: border-box; position: relative;">
-                    <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">ionic init "nom_de_votre_appli" --type=angular</div>
-                    </pre>
-                  </div>
+                  <blockquote>
+                    <p>ionic init "nom_de_votre_appli" --type=angular&nbsp;</p>
+                  </blockquote>
                 </div>
               </div>
             </div>
@@ -100,25 +94,19 @@
                   <p>Une CLI fait en général gagner beaucoup de temps à un développeur !</p>
                   <p>Vous allez pouvoir générer des nouvelles pages Angular à partir de la CLI pour votre application (plus besoin de créer les dossiers et les fichiers à la main) <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://ionicframework.com/docs/cli/commands/generate" rel="noopener noreferrer" target="_blank">lien vers la doc</a>
                   </p>
-                  <div style="box-sizing: border-box; position: relative;">
-                    <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">ionic generate page ma-nouvelle-page</div>
-                    </pre>
-                  </div>
+                  <blockquote>
+                    <p>ionic generate page ma-nouvelle-page</p>
+                  </blockquote>
                   <hr>
                   <p>Vous pouvez aussi démarrer votre serveur local pour tester vos devs depuis votre navigateur (en mode live reload) comme pour un site web quoi.</p>
-                  <div style="box-sizing: border-box; position: relative;">
-                    <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">ionic serve</div>
-                    </pre>
-                  </div>
+                  <blockquote>
+                    <p>ionic serve</p>
+                  </blockquote>
                   <hr>
                   <p>Ou bien la lancer sur votre téléphone local&nbsp;</p>
-                  <div style="box-sizing: border-box; position: relative;">
-                    <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">ionic capacitor run android/ios</div>
-                    </pre>
-                  </div>
+                  <blockquote>
+                    <p>ionic capacitor run android/ios&nbsp;</p>
+                  </blockquote>
                   <p>Je vous mets ici le lien vers toutes les commandes qui existent : <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" href="https://ionicframework.com/docs/cli" rel="noopener noreferrer" target="_blank">CLI documentation</a>
                   </p>
                 </div>
@@ -153,59 +141,32 @@
                 <div class="fr-view u-clearfix u-rich-text u-text">
                   <p>Votre application est composée de plusieurs pages/composants, étant basé sur une technologie web, ionic utilise le même routeur que celui qui est utilisé pour gérer un site web.</p>
                   <blockquote>
-                    <p>app-routing.module.ts (normalement placé à la racine de votre dossier app)</p>
+                    <p>app-routing.module.ts (normalement placé à la racine de votre dossier&nbsp;</p>
                   </blockquote>
-                  <div style="box-sizing: border-box; position: relative;">
-                    <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">const routes: Routes = [
-  {
-&nbsp; &nbsp; path: 'account', // =&gt; Considérez le 'path' comme étant l'URL de la page de votre application</div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">&nbsp; &nbsp; // Vous allez ensuite lui attacher un module via la ligne suivante :
-    loadChildren: () =&gt; import('./pages/account/account.module').then(m =&gt; m.AccountModule)
-  },
-  {
-    path: 'support',
-    loadChildren: () =&gt; import('./pages/support/support.module').then(m =&gt; m.SupportModule)
-  },
-  {
-    path: 'login',
-    loadChildren: () =&gt; import('./pages/login/login.module').then(m =&gt; m.LoginModule)
-  },
-  {
-    path: 'app',
-    loadChildren: () =&gt; import('./pages/tabs-page/tabs-page.module').then(m =&gt; m.TabsModule)
-  }
-];</div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-weight: 400; font-size: 1rem;"># Si vous souhaitez changer de page depuis votre code, commencez par importer la classe Router</span>
-                      </div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-size: 1rem;">
-                          <span style="font-weight: 400;">import { Router } from '@angular/router';</span>
-                        </span>
-                      </div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-size: 1rem;">
-                          <span style="font-weight: 400;"># Injecter le ensuite dans votre classe en passant par son constructeur</span>
-                        </span>
-                      </div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-size: 1rem;">
-                          <span style="font-weight: 400;">constructor(
-  public router: Router,
-) { }</span>
-                        </span>
-                      </div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-size: 1rem;">
-                          <span style="font-weight: 400;"># Il ne vous reste plus qu'à l'utiliser à l'endroit voulu pour naviguer entre vos pages</span>
-                        </span>
-                      </div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-weight: 400; font-size: 1rem;">this.router.navigateByUrl('/login');</span>
-                      </div>
-                    </pre>
-                  </div>
+                  <blockquote>const routes: Routes = [{<br> path: 'account' , // =&gt; Considérez le 'path' comme étant l'URL de la page de votre application<br> // Vous allez ensuite lui attacher un module via la ligne suivante :<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;"> loadChildren: () =&gt; import('./pages/account/account.module').then(m =&gt; m.AccountModule)<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">},<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">{<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;"> path: 'support',<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;"> loadChildren: () =&gt; import('./pages/support/support.module').then(m =&gt; m.SupportModule)<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">}];
+                  </blockquote>
+                  <p>
+                    <br>
+                  </p>
+                  <blockquote>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);"># Si vous souhaitez changer de page depuis votre code, commencez par importer la classe Router</div>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);">import { Router } from '@angular/router';</div>
+                  </blockquote>
+                  <p>
+                    <br>
+                  </p>
+                  <blockquote>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);"># Injecter le ensuite dans votre classe en passant par son constructeur</div>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);">constructor(<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">public router: Router,<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">) { }
+                    </div>
+                  </blockquote>
+                  <p>
+                    <br>
+                  </p>
+                  <blockquote>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);"># Il ne vous reste plus qu'à l'utiliser à l'endroit voulu pour naviguer entre vos pages</div>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);">this.router.navigateByUrl('/login');</div>
+                  </blockquote>
                 </div>
               </div>
             </div>
@@ -222,62 +183,34 @@
                   <blockquote>
                     <p>app.module.ts</p>
                   </blockquote>
-                  <div style="box-sizing: border-box; position: relative;">
-                    <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">import { HttpClientModule } from '@angular/common/http';
-...</div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">@NgModule({
-  imports: [...,
-    HttpClientModule
-  ],...
-})
-export class AppModule {}</div>
-                    </pre>
-                  </div>
                   <blockquote>
-                    <p>Ensuite dans votre fichier typescript (page ou composant) :</p>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);">import { HttpClientModule } from '@angular/common/http';<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">...
+                    </div>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);">@NgModule({<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">imports: [...,<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">HttpClientModule<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">],...<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">})<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">export class AppModule {}
+                    </div>
                   </blockquote>
-                  <div style="box-sizing: border-box; position: relative;">
-                    <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">import {HttpClient, HttpHeaders} from '@angular/common/http';
-import { Observable } from 'rxjs'; #Utile pour gérer la partie asynchrone de la requête HTTP</div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);"># Définition des headers génériques pour tous les appels
-const httpOptions = {
-  headers: new HttpHeaders(
-    {
-      'Content-Type': 'application/json',
-    }
-  )
-};</div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-size: 1rem; font-weight: 400;"># On ajoute le client HTTP dans le constructeur</span>
-                      </div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-size: 1rem; font-weight: 400;">constructor(
-  ...,
-  public httpClient: HttpClient
-) {}</span>
-                      </div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-size: 1rem;">
-                          <span style="font-weight: 400;"># On peut ensuite utiliser le client pour récupérer nos objets.</span>
-                        </span>
-                      </div>
-                      <div style="box-sizing: border-box; color: rgb(57, 58, 52);">
-                        <span style="font-size: 1rem;">
-                          <span style="font-weight: 400;">getItems() {
-  this.httpClient.get&lt;Observable&lt;object[]&gt;&gt;('https://my-url/items', httpOptions)
-    .subscribe(items =&gt; {
-      this.items = items;
-    });
-}</span>
-                        </span>
-                      </div>
-                    </pre>
-                  </div>
                   <p>
                     <br>
                   </p>
+                  <blockquote>
+                    <p>Ensuite dans votre fichier typescript (page ou composant) :</p>
+                  </blockquote>
+                  <blockquote>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);">import {HttpClient, HttpHeaders} from '@angular/common/http';<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">import { Observable } from 'rxjs'; #Utile pour gérer la partie asynchrone de la requête HTTP
+                    </div>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);"># Définition des headers génériques pour tous les appels<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">const httpOptions = {<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">headers: new HttpHeaders(<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">&nbsp; &nbsp; &nbsp;{ 'Content-Type': 'application/json'}<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">)};
+                    </div>
+                  </blockquote>
+                  <blockquote>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);"># On ajoute le client HTTP dans le constructeur</div>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);">constructor(<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">...,<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">public httpClient: HttpClient<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">) {}
+                    </div>
+                  </blockquote>
+                  <blockquote>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);"># On peut ensuite utiliser le client pour récupérer nos objets.</div>
+                    <div style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important; color: rgb(57, 58, 52);">getItems() {<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">&nbsp; &nbsp; &nbsp;this.httpClient.get&lt;Observable&lt;object[]&gt;&gt;('https://my-url/items', httpOptions)<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">&nbsp; &nbsp; &nbsp;.subscribe(items =&gt; {<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this.items = items;<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">&nbsp; &nbsp; &nbsp;});<br style="box-sizing: border-box; -webkit-user-drag: element !important; user-select: text !important; outline: 0px !important; cursor: url(&quot;images/1.svg&quot;) 10 10, auto; pointer-events: auto !important;">}
+                    </div>
+                  </blockquote>
                 </div>
               </div>
             </div>
@@ -290,25 +223,13 @@ const httpOptions = {
             <div class="u-accordion-pane u-container-style u-white u-accordion-pane-6" id="accordion-f8c9" aria-labelledby="link-accordion-f8c9">
               <div class="u-container-layout u-container-layout-6">
                 <div class="fr-view u-clearfix u-rich-text u-text">
-                  <p>
-                    <br>
-                  </p>
-                  <pre style="box-sizing: border-box; margin-top: 0px; margin-bottom: 16px; padding: 16px; border: 1px solid rgb(225, 228, 232); border-radius: 6px; color: rgb(57, 58, 52); background-color: rgb(246, 248, 250); overflow: auto;">
-                    <p>
-                      <span style="font-weight: 400; font-size: 1rem;">ng add @angular/pwa</span>
-                    </p>
-                    <p>
-                      <span style="font-size: 1rem;">
-                        <span style="font-weight: 400;"># Pour packager votre application en site web :</span>
-                      </span>
-                    </p>
-                    <p>
-                      <span style="font-weight: 400; font-size: 1rem;">ionic build --prod</span>
-                    </p>
-                  </pre>
-                  <p>
-                    <br>
-                  </p>
+                  <blockquote>
+                    <p>ng add @angular/pwa</p>
+                  </blockquote>
+                  <blockquote>
+                    <p># Pour packager votre application en site web :</p>
+                    <p>ionic build --prod</p>
+                  </blockquote>
                   <p>Une fois la commande de build passée, vous allez trouver un dossier www dans votre projet. Il ne vous reste plus qu'à héberger ce contenu sur un serveur web et d'accéder à la page si vous souhaitez profiter de votre appli en PWA depuis votre téléphone.</p>
                   <p>
                     <a class="u-active-none u-border-none u-btn u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4" href="https://ionicframework.com/docs/angular/pwa" rel="noopener noreferrer" target="_blank">Lien vers la doc officielle (la configuration des services workers se trouve dedans, il y'a aussi un guide de déploiement avec Firebase)</a>
