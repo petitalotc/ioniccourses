@@ -510,8 +510,8 @@
 
   .u-section-4 .u-repeater-1 {
     grid-auto-columns: calc(50% - 5px);
-    grid-template-columns: repeat(2, calc(50% - 5px));
-    grid-auto-rows: calc(50% - 5px);
+    grid-template-columns: calc(50% - 5px) calc(50% - 5px);
+    grid-gap: 0px 0px;
   }
 }
 
